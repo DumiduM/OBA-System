@@ -87,7 +87,7 @@ class Member extends Dbh{
 
     function approveRegistration($Id){
         $regId = $Id;
-        $query ="UPDATE user SET status='1' WHERE regestration_number='$regId'";
+        $query ="UPDATE user SET status='2' WHERE regestration_number='$regId'";
         $result =$this->connect()->query($query);   
         echo "Done";
     }
