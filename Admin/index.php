@@ -128,6 +128,7 @@ $no_totalreg ='';
                 <!-- .row -->
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <a href="member-register.php">
                         <div class="white-box analytics-info">
                             <h3 class="box-title">New Registration(s)</h3>
                             <ul class="list-inline two-part">
@@ -137,8 +138,10 @@ $no_totalreg ='';
                                 <li class="text-right"><i class="ti-arrow-up text-success"></i> <span class="counter text-success"><?php echo "$no_newreg";?></span></li>
                             </ul>
                         </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <a href="member-register.php">
                         <div class="white-box analytics-info">
                             <h3 class="box-title">Pending Registration(s)</h3>
                             <ul class="list-inline two-part">
@@ -148,8 +151,10 @@ $no_totalreg ='';
                                 <li class="text-right"><i class="ti-arrow-up text-purple"></i> <span class="counter text-purple"><?php echo "$no_pen";?></span></li>
                             </ul>
                         </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <a href="member-search.php">
                         <div class="white-box analytics-info">
                             <h3 class="box-title">Total Members</h3>
                             <ul class="list-inline two-part">
@@ -159,6 +164,7 @@ $no_totalreg ='';
                                 <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info"><?php echo "$no_totalreg";?></span></li>
                             </ul>
                         </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-sm-6 col-xs-12">
                         <div class="white-box analytics-info">

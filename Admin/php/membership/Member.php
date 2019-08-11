@@ -95,7 +95,7 @@ class Member extends Dbh{
     function removeMember($Id){
         $regId = $Id;
         // $query ="DELETE FROM user WHERE regestration_number='$regId'";
-        $query ="UPDATE user SET status='-2' WHERE regestration_number='$regId'";
+    $query ="UPDATE user SET status='-2' WHERE regestration_number='$regId'";
         $result =$this->connect()->query($query);   
         echo "Done";
         
