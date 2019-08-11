@@ -103,10 +103,7 @@ class Member extends Dbh{
 
     function searchMember($val){
         $name = $val."%";
-        $query ="SELECT * FROM member WHERE member.name Like '$name'";
-        // echo '<script language="javascript">';
-        // echo 'alert("'.$query.'")';
-        // echo '</script>';
+        $query ="SELECT * FROM member,user WHERE member.name Like '$name' AND user.status >= '-1' AND member.regestration_number = user.regestration_number";
         $result =$this->connect()->query($query);   
         $no_reg =mysqli_num_rows($result);
         return $result;

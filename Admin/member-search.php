@@ -193,6 +193,7 @@
          
              $(document).on('click', '.deleteMember', function(){
                  $dataString=$(this).val();
+                //  alert($dataString);
                  $('#edit'+$dataString).modal('hide');
                  $('body').removeClass('modal-open');
                  $('.modal-backdrop').remove();

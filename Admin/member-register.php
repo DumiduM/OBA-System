@@ -41,7 +41,8 @@
 
 <?php
       session_start();
-
+      echo '<script language="javascript">';
+      echo '</script>';
       if( isset($_SESSION['login_user']) ){
         echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
         echo "<span id ='login_user_reg' style='visibility:hidden; position:absolute;'>".$_SESSION['regestration_number']."</span>";
@@ -164,7 +165,6 @@
 
         $(document).on('click', '.approvePayment', function(){
             $dataString=$(this).val();
-            alert($dataString);
             $('#approve'+$dataString).modal('hide');
             $('body').removeClass('modal-open');
             $('.modal-backdrop').remove();
@@ -183,7 +183,7 @@
 
 
         function showMemberList(){
-		$.ajax({
+        $.ajax({
 			url: 'MembersList.php',
 			type: 'POST',
 			async: false,

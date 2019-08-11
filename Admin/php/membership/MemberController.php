@@ -2,6 +2,9 @@
 session_start();
 include_once 'Member.php';
 $action = $_REQUEST['action'];
+echo '<script language="javascript">';
+echo 'alert("awa")';
+echo '</script>';
 
 switch ($action) {
     case "approveRegistration":
@@ -21,7 +24,7 @@ function approveRegistration(){
     $regId = $_REQUEST['q'];
 
     $member = new Member();
-
+       
     $result = $member->approveRegistration($regId);
 }
 
@@ -29,7 +32,9 @@ function removeMember(){
     $regId = $_REQUEST['q'];
 
     $member = new Member();
-
+        echo '<script language="javascript">';
+        echo 'alert("'.$regId.'")';
+        echo '</script>';
     $result = $member->removeMember($regId);
 }
 
@@ -40,6 +45,6 @@ function approvePayment(){
 
     $result = $member->approvePayment($regId);
 }
-}
+
 
 ?>
